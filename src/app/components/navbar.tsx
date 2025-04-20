@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-black text-white w-full z-[60]">
+      <nav className="bg-black text-white w-full z-[60] py-12">
         <div className="max-w-[90%] mx-auto">
           <div className="flex justify-between h-16 items-center relative">
             {/* Brand text */}
@@ -48,13 +48,14 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
-                    pathname === link.href
-                      ? 'border-white text-white'
-                      : 'border-transparent text-gray-300 hover:border-gray-300 hover:text-white'
-                  }`}
+                  className="inline-flex items-center text-base font-light relative group py-1 text-white"
                 >
-                  {link.name}
+                  <span className="px-1">{link.name}</span>
+                  {pathname === link.href ? (
+                    <span className="absolute bottom-0 left-1 right-1 h-px bg-white" />
+                  ) : (
+                    <span className="absolute bottom-0 left-1 right-1 h-px bg-white transform scale-x-0 transition-transform duration-200 ease-in-out origin-right group-hover:scale-x-100 group-hover:origin-left" />
+                  )}
                 </Link>
               ))}
             </div>

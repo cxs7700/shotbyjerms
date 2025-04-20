@@ -5,7 +5,7 @@ export default function Contact() {
         <h1 className="text-5xl font-light mb-12 text-center">Contact</h1>
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12 space-y-2">
-            <p className="text-gray-300">Email: hello@shotbyjerms.com</p>
+            <p className="text-gray-300">Email: shotbyjerms@gmail.com</p>
             <p className="text-gray-300">Instagram: @shotbyjerms</p>
           </div>
           <form className="space-y-6">

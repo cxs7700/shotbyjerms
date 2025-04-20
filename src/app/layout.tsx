@@ -3,6 +3,8 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider as NextThemesProvider } from "next-themes"
+import Navbar from "./components/navbar"
+import Footer from "./components/footer"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -20,7 +22,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} bg-black text-white antialiased`}>
         <NextThemesProvider attribute="class" defaultTheme="system" enableSystem={true} disableTransitionOnChange>
+          <Navbar />
           {children}
+          <Footer />
         </NextThemesProvider>
       </body>
     </html>
