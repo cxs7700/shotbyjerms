@@ -27,19 +27,19 @@ const Navbar = () => {
     { name: 'Booking', href: '/booking' },
     { name: 'Projects', href: '/projects' },
     { name: 'Printing', href: '/printing' },
-    { name: 'Editing Services', href: '/editing' },
+    { name: 'Editing', href: '/editing' },
     { name: 'Rates', href: '/rates' },
     { name: 'Contact', href: '/contact' },
   ];
 
   return (
     <>
-      <nav className="bg-black text-white w-full z-[60] py-12">
+      <nav className="bg-black text-white w-full z-[60] py-4 sm:py-12">
         <div className="max-w-[90%] mx-auto">
           <div className="flex justify-between h-16 items-center relative">
             {/* Brand text */}
             <div className="flex-shrink-0">
-              <Link href="/" className="text-2xl font-light relative z-[70]">「 𝕵𝕰𝕽𝕸𝕾 」</Link>
+              <Link href="/" className="text-2xl sm:text-3xl font-light relative z-[70]">「 𝕵𝕰𝕽𝕸𝕾 」</Link>
             </div>
 
             {/* Desktop Navigation */}
@@ -68,12 +68,12 @@ const Navbar = () => {
                 aria-label="Toggle menu"
               >
                 {!isMenuOpen ? (
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+                  <svg className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 6h16M4 12h16m-7 6h7" />
                   </svg>
                 ) : (
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <svg className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 )}
               </button>

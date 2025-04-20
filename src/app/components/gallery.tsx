@@ -15,42 +15,42 @@ const galleryItems: GalleryItem[] = [
   {
     id: '1',
     title: 'Project 1',
-    imageUrl: '/placeholder.jpeg', // You'll need to add this image to your public folder
+    imageUrl: '/placeholder-1.jpeg',
     category: 'Portrait',
     slug: 'project-1',
   },
   {
     id: '2',
     title: 'Project 2',
-    imageUrl: '/placeholder.jpeg',
+    imageUrl: '/placeholder-2.jpeg',
     category: 'Creative',
     slug: 'project-2',
   },
   {
     id: '3',
     title: 'Project 3',
-    imageUrl: '/placeholder.jpeg',
+    imageUrl: '/placeholder-3.jpeg',
     category: 'Portrait',
     slug: 'project-3',
   },
   {
     id: '4',
     title: 'Project 4',
-    imageUrl: '/placeholder.jpeg',
+    imageUrl: '/placeholder-4.jpeg',
     category: 'Creative',
     slug: 'project-4',
   },
   {
     id: '5',
     title: 'Project 5',
-    imageUrl: '/placeholder.jpeg',
+    imageUrl: '/placeholder-5.jpeg',
     category: 'Portrait',
     slug: 'project-5',
   },
   {
     id: '6',
     title: 'Project 6',
-    imageUrl: '/placeholder.jpeg',
+    imageUrl: '/placeholder-6.jpeg',
     category: 'Creative',
     slug: 'project-6',
   },
@@ -59,11 +59,11 @@ const galleryItems: GalleryItem[] = [
 const Gallery = () => {
   return (
     <div className="w-full bg-black">
-      <div className="max-w-[90%] mx-auto py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
+      <div className="max-w-[90%] mx-auto py-4 sm:py-6 pb-12">
+        <div className="grid grid-cols-2 gap-1">
           {galleryItems.map((item) => (
             <Link href={`/projects/${item.slug}`} key={item.id} className="group">
-              <div className="relative aspect-[4/5] overflow-hidden">
+              <div className="relative aspect-[4/6] overflow-hidden">
                 <Image
                   src={item.imageUrl}
                   alt={item.title}

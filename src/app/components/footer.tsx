@@ -5,12 +5,12 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="w-full bg-black text-white">
-      <div className="max-w-[90%] mx-auto py-6 pb-24">
+      <div className="max-w-[90%] mx-auto py-6 pb-12 md:pb-24">
         <div className="flex justify-between items-center">
-          <div className="text-xl font-light">
+          <div className="text-md sm:text-3xl font-light">
             © Jeremy Savan
           </div>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 text-xs sm:text-lg">
             <Link 
               href= "mailto:shotbyjerms@gmail.com"
               className="text-white relative group py-1 inline-block"
