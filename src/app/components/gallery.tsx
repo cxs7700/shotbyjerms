@@ -59,7 +59,7 @@ const galleryItems: GalleryItem[] = [
 const Gallery = () => {
   return (
     <div className="w-full bg-black">
-      <div className="max-w-[90%] mx-auto py-4 sm:py-6 pb-12">
+      <div className="max-w-[90%] md:max-w-[75%] mx-auto py-4 sm:py-6 pb-12">
         <div className="grid grid-cols-2 gap-1">
           {galleryItems.map((item) => (
             <Link href={`/projects/${item.slug}`} key={item.id} className="group">
